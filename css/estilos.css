@@ -2,11 +2,12 @@ h1 {
     text-align: center;
     font-size: 3em;
     font-weight: bold;
-    color: #ffd700; /* color dorado */
-    text-shadow: 1px 1px #333; /* sombra de texto */
-    margin-top: 50px; /* espacio superior */
-    margin-bottom: 50px; /* espacio inferior */
+    color: #ffd700; 
+    text-shadow: 1px 1px #333; 
+    margin-top: 50px; 
+    margin-bottom: 50px; 
   }
+  
  /* Estilo para el cuerpo del documento */
 body {
     font-size: 1.8em;
@@ -17,7 +18,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 0;
+    margin-bottom: 100px;
+    background-color: rgb(202, 253, 151);
   }
   
   /* Estilo para los campos de entrada */
@@ -47,3 +49,14 @@ body {
     font-size: 1.2em;
    
   }
+  #boton-edad {
+    padding: 10px;
+    font-size: 20px;
+    background-color: #cfeb9a;
+    color: #0f0d0d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 50px;
+  }
+  
