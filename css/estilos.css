@@ -64,3 +64,51 @@ body {
     color: #bcca20;
   }
   
+  .calculator {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.2em;
+    background-color:rgb(161, 161, 161);
+    border-radius: 10px;
+    border-style: groove;
+  }
+  
+  .input-group {
+    margin-bottom: 10px;
+  }
+  
+  .labelcal {
+    display: inline-block;
+    width: 200px;
+    font-size:medium;
+    text-align: left;
+  }
+  
+  .inputcal {
+    width: 150px;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 1em;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .result {
+    margin-top: 20px;
+  }
+  
+  #output {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  

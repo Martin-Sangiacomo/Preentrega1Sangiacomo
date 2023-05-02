@@ -66,3 +66,12 @@ botonEdad.onclick = function() {
     alert("Bienvenido, sea responsable a la hora de invertir");
   }
 };
+
+function calculate() {
+  const number = parseFloat(document.getElementById("number").value);
+  const percentage = parseFloat(document.getElementById("percentage").value);
+
+  const result = number + (number * percentage) / 100;
+
+  document.getElementById("output").innerHTML = result;
+}

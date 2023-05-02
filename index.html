@@ -15,7 +15,7 @@
 
     <main>
         <form>
-        <label for="riesgo">Nivel de riesgo como inversor:</label><br>
+        <label   for="riesgo">Nivel de riesgo como inversor:</label><br>
         <select id="riesgo" name="riesgo">
           <option value="1">Riesgo muy bajo</option>
           <option value="2">Riesgo bajo</option>
@@ -26,7 +26,7 @@
         <input type="button" value="Calcular posibles perdidas" onclick="calcularRiesgo()">
       </form>
       <form>
-		<label for="monto-invertir">Monto a invertir:</label>
+		<label  for="monto-invertir">Monto a invertir:</label>
 		<input type="number" id="monto-invertir" name="monto-invertir" required><br>
 
 		<label for="nivel-riesgo">Nivel de riesgo:</label>
@@ -42,6 +42,22 @@
 	</form>
 
 	<div id="resultado"></div>
+
+    <div class="calculator">
+        <h2>Suma y/o resta de porcentajes</h2>
+        <div class="input-group">
+          <label class= "labelcal" for="number">Número:</label>
+          <input class= "inputcal"type="number" id="number" />
+        </div>
+        <div class="input-group">
+          <label class= "labelcal" for="percentage">Porcentaje:</label>
+          <input class= "inputcal"type="number" id="percentage" />
+        </div>
+        <div class="result">
+          <button onclick="calculate()">Calcular</button>
+          <p id="output"></p>
+        </div>
+      </div>
     </main>
     <script src="main.js"></script>
 </body>
