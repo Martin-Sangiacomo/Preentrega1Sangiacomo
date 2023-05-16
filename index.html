@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <header>
@@ -43,21 +44,25 @@
 
 	<div id="resultado"></div>
 
-    <div class="calculator">
-        <h2>Suma y/o resta de porcentajes</h2>
-        <div class="input-group">
-          <label class= "labelcal" for="number">Número:</label>
-          <input class= "inputcal"type="number" id="number" />
-        </div>
-        <div class="input-group">
-          <label class= "labelcal" for="percentage">Porcentaje:</label>
-          <input class= "inputcal"type="number" id="percentage" />
-        </div>
-        <div class="result">
-          <button onclick="calculate()">Calcular</button>
-          <p id="output"></p>
-        </div>
-      </div>
+  <div>
+    <input id="input-1" type="number" placeholder="Ingrese el primer número">
+    <select id="select-1">
+      <option value="+">+</option>
+      <option value="-">-</option>
+    </select>
+    <input id="input-2" type="number" placeholder="Ingrese el segundo número">
+    <select id="select-2">
+      <option value="">%</option>
+      <option value="and">&amp;&amp;</option>
+      <option value="or">||</option>
+    </select>
+    <input id="input-3" type="number" placeholder="Ingrese el tercer número">
+    <button id="calcular">Calcular</button>
+  </div>
+  <div>
+    <p id="resultado"></p>
+  </div>
+  
     </main>
     <script src="main.js"></script>
 </body>

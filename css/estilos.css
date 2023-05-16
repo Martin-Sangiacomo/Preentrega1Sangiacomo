@@ -93,15 +93,37 @@ body {
     font-size: 1em;
   }
   
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  input, select {
+    margin-right: 5px;
+    padding: 5px;
+  }
+  
   button {
-    padding: 5px 10px;
-    background-color: #008CBA;
-    color: white;
+    background-color: #4CAF50;
     border: none;
-    border-radius: 3px;
-    font-size: 1em;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 10px;
     cursor: pointer;
   }
+  
+  #resultado {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
   
   .result {
     margin-top: 20px;
@@ -111,4 +133,3 @@ body {
     font-size: 1.5em;
     font-weight: bold;
   }
-  

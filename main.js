@@ -67,11 +67,38 @@ botonEdad.onclick = function() {
   }
 };
 
-function calculate() {
-  const number = parseFloat(document.getElementById("number").value);
-  const percentage = parseFloat(document.getElementById("percentage").value);
+const calcular = () => {
+  const input1 = parseInt(document.getElementById("input-1").value);
+  const select1 = document.getElementById("select-1").value;
+  const input2 = parseInt(document.getElementById("input-2").value);
+  const select2 = document.getElementById("select-2").value;
+  const input3 = parseInt(document.getElementById("input-3").value);
 
-  const result = number + (number * percentage) / 100;
+  let resultado;
 
-  document.getElementById("output").innerHTML = result;
-}
+  if (select2 === "") {
+    resultado = eval(`${input1} ${select1} ${input2}`);
+  } else if (select2 === "and") {
+    resultado = input1 && input2 && input3;
+  } else if (select2 === "or") {
+    resultado = input1 || input2 || input3;
+  } else {
+    resultado = eval(`${input1} ${select1} (${input2} * ${input3} / 100)`);
+  }
+
+  document.getElementById("resultado").innerHTML = `Resultado: ${resultado}`;
+};
+
+document.getElementById("calcular").addEventListener("click", calcular);
+
+
+Swal.fire({
+  title: "Aviso",
+  text: "Invertir conlleva riesgos, sea cauteloso",
+  icon: "warning",
+  confirmButtonText: "Aceptar"
+});
+
+
+
+document.getElementById("calcular").addEventListener("click", calcular);
